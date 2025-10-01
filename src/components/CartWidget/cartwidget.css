@@ -1,0 +1,22 @@
+.carritocss {
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.carritocss p {
+    position: absolute;
+    /* se coloca encima del ícono */
+    top: 5px;
+    right: 3px;
+    background: #f39c12;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+}

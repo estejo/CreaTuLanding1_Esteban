@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    /* Fija el elemento respecto a la ventana gráfica */
+    top: 0;
+    /* Lo coloca en la parte superior */
+    width: 100%;
+    height: auto;
+    background-color: rgba(104, 243, 236, 0.514);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.categorias {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+    color: rgb(3, 3, 83);
+    font-size: 23px;
+
+}
+
+.categorias li {
+    padding: 0 10px;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.categorias li:hover {
+  color: #f39c12; /* efecto hover */
+}

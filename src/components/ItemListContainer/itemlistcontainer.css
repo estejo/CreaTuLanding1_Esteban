@@ -1,0 +1,28 @@
+.itemlistcontainer {
+    margin-top: 45px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.itemlistcontainer h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.2s ease forwards;
+    /* animación opcional */
+    opacity: 0;
+}
+
+/* Keyframes de fadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
