@@ -1,22 +1,29 @@
-import logo from "../../assets/img/logo.png";
-import CartWidget from "../CartWidget/CartWidget";
-import './navbar.css';
+import './navbar.css'
+import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/img/logoLibreria.png';
+
+const categories = ['Escolar', 'Infantil', 'Juvenil'];
 
 const NavBar = () => {
+  return (
+    <nav className="navbar">
+      <Link to="/"><img src={logo} className="logo" alt="logo" /></Link>
 
-    return (
-        <nav className="navbar">
-            <img src={logo} className="logo" alt="" />
+      <ul className="categorias">
+        {categories.map(cat => (
+          <li key={cat}>
+            <Link to={`/category/${cat.toLowerCase()}`}>{cat}</Link>
+          </li>
+        ))}
+      </ul>
 
-            <ul className="categorias">
-                <li>Escolar</li>
-                <li>Infantil</li>
-                <li>Juvenil</li>
-            </ul>
-            <CartWidget />
-        </nav>
-    );
-
+      <div className="cart-container">
+        <Link to="/cart" style={{ color: '#033', textDecoration: 'none', fontWeight: '500' }}>Ver Carrito</Link>
+        <CartWidget />
+      </div>
+    </nav>
+  );
 };
 
 export default NavBar;

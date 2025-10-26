@@ -1,46 +1,57 @@
 .navbar {
     position: fixed;
-    /* Fija el elemento respecto a la ventana gráfica */
     top: 0;
-    /* Lo coloca en la parte superior */
     width: 100%;
-    height: auto;
-    background-color: rgba(104, 243, 236, 0.514);
+    height: 80px;
+    z-index: 100;
+    background-color: rgba(104, 243, 236, 0.8);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Logo */
 .navbar .logo {
-    padding: 10px;
-    margin: 5px;
     width: 100px;
-    height: 80px;
-    display: flex;
-    align-items: center;
+    height: auto;
     cursor: pointer;
 }
 
-
+/* Categorías */
 .categorias {
     display: flex;
-    gap: 2rem;
     align-items: center;
-    list-style-type: none;
-    color: rgb(3, 3, 83);
-    font-size: 23px;
-
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.categorias li {
-    padding: 0 10px;
-    margin: 10px;
-    font-size: 25px;
-    cursor: pointer;
-    cursor: pointer;
+.categorias li a {
+    text-decoration: none;
+    color: rgb(3, 3, 83);
+    font-size: 20px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.categorias li:hover {
-  color: #f39c12; /* efecto hover */
+.categorias li a:hover {
+    color: #f39c12;
+}
+
+/* Contenedor carrito + link */
+.cart-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .categorias {
+        display: none; /* Aquí podrías poner un menú hamburguesa si quieres */
+    }
 }

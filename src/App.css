@@ -1,7 +1,7 @@
 body {
     margin: 0;
     /* antes tenías margin-top: 0% → mejor margin: 0 */
-    padding: 0;
+    padding-top: 60px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2c3e50;
@@ -14,9 +14,8 @@ body {
 }
 
 .app h1 {
-        
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        font-weight: 600;
         color: #34495e;
         letter-spacing: 1px;
         animation: fadeIn 1.5s ease forwards;
