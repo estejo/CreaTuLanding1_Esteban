@@ -9,7 +9,7 @@ const CartWidget = () => {
   const qty = getTotalQuantity()
   return (
     <div className="carritocss">
-      <Link to="/cart" style={{display:'flex',alignItems:'center',gap:8,textDecoration:'none'}}>
+      <Link to="/cart" style={{display:'flex',alignItems:'center',gap:10,textDecoration:'none'}}>
         <img src={carrito} alt="car" />
         <span className="cart-qty">{qty}</span>
       </Link>
@@ -17,4 +17,4 @@ const CartWidget = () => {
   )
 }
 
-export default CartWidget
+export default CartWidget;
