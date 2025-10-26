@@ -21,7 +21,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
-      <h2 style={{marginLeft:12}}>{categoryId ? `Categoria: ${categoryId}` : 'Catalogo'}</h2>
+      <h2 style={{marginLeft:12}}>{categoryId ? `Categoría: ${categoryId}` : 'Catálogo'}</h2>
       {loading ? <p style={{padding:12}}>Cargando productos...</p> : <ItemList items={items} />}
     </div>
   )

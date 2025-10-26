@@ -1,7 +1,7 @@
 import './navbar.css'
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/img/logoLibreria.png';
+import logo from '../../assets/img/logo.png';
 
 const categories = ['Escolar', 'Infantil', 'Juvenil'];
 
@@ -19,7 +19,7 @@ const NavBar = () => {
       </ul>
 
       <div className="cart-container">
-        <Link to="/cart" style={{ color: '#033', textDecoration: 'none', fontWeight: '500' }}>Ver Carrito</Link>
+        <Link to="/cart" style={{ color: '#033', textDecoration: 'none', fontWeight: '500' }}></Link>
         <CartWidget />
       </div>
     </nav>

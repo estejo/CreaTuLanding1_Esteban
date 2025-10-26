@@ -2,20 +2,20 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 90px;
     z-index: 100;
     background-color: rgba(104, 243, 236, 0.8);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
 .navbar .logo {
     width: 100px;
-    height: auto;
+    height: 85px;
     cursor: pointer;
 }
 
@@ -49,9 +49,20 @@
     gap: 1rem;
 }
 
+.cart-container img {
+    max-width: 50px;
+    width: 100%;
+    padding: 40px;
+    margin-top: 1rem;
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .categorias {
-        display: none; /* Aquí podrías poner un menú hamburguesa si quieres */
+        display: none;
+        /* Aquí podrías poner un menú hamburguesa si quieres */
     }
 }

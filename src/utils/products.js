@@ -3,7 +3,10 @@ const products = [
   { id: '2', title: 'Cuentos Infantiles', price: 1800, category: 'Infantil', description: 'Colección de cuentos para niños.', image: '/src/assets/img/libroinfantil.PNG' },
   { id: '3', title: 'Novela Juvenil', price: 3200, category: 'Juvenil', description: 'Historia emocionante para jóvenes.', image: '/src/assets/img/librojuvenil.PNG' },
   { id: '4', title: 'Ortografía Escolar', price: 2100, category: 'Escolar', description: 'Ejercicios y actividades.', image: '/src/assets/img/librosescolares.PNG' },
-  { id: '5', title: 'Animales del Bosque', price: 1500, category: 'Infantil', description: 'Libro ilustrado sobre animales.', image: '/src/assets/img/libroinfantil.PNG' }
+  { id: '5', title: 'Animales del Bosque', price: 1500, category: 'Infantil', description: 'Libro ilustrado sobre animales.', image: '/src/assets/img/libroinfantil.PNG' },
+  { id: '6', title: 'Animales del Bosque', price: 1500, category: 'Infantil', description: 'Libro ilustrado sobre animales.', image: '/src/assets/img/libroinfantil.PNG' },
+  { id: '7', title: 'Animales del Bosque', price: 1500, category: 'Infantil', description: 'Libro ilustrado sobre animales.', image: '/src/assets/img/libroinfantil.PNG' },
+  { id: '8', title: 'Animales del Bosque', price: 1500, category: 'Infantil', description: 'Libro ilustrado sobre animales.', image: '/src/assets/img/libroinfantil.PNG' }
 ];
 
 export function fetchProducts() {
