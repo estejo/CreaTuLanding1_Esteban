@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /* antes tenías margin-top: 0% → mejor margin: 0 */
     padding-top: 60px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +9,6 @@ body {
 .app-root {
     text-align: center;
     padding: 2rem 0;
-    /* quito el padding horizontal */
 }
 
 .app-root h1 {
@@ -19,9 +17,7 @@ body {
     color: #14395f;
     letter-spacing: 1px;
     animation: fadeIn 1.5s ease forwards;
-    /*duración 1.5s */
     opacity: 0;
-    /* empieza invisible */
 }
 
 
@@ -30,17 +26,15 @@ body {
     0% {
         opacity: 0;
         transform: translateY(20px);
-        /* baja 20px al inicio */
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
-        /* termina en su posición */
     }
 }
 
-/* Responsive opcional */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;

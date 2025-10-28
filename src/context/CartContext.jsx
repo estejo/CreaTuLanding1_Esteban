@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
     try {
       localStorage.setItem('cart_v1', JSON.stringify(cart));
     } catch (e) {
-      console.error('Error saving cart', e);
+      console.error('Error', e);
     }
   }, [cart]);
 
