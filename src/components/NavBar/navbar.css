@@ -3,16 +3,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;          /* ancho completo del viewport */
+    width: 100vw;          
     height: 90px;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;       /* opcional, ajusta espacio interno */
-    background: orange; /* degradé celeste claro a blanco */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
-    box-sizing: border-box; /* asegura que padding no expanda el ancho */
+    padding: 0 2rem;       
+    background: orange; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    box-sizing: border-box;
 }
 
 .navbar ul{
@@ -23,8 +23,7 @@
 .navbar .nav-left,
 .navbar .nav-right {
     display: flex;
-    align-items: center;           /* centra verticalmente */
-    gap: 2rem;                     /* espacio entre elementos */
+    align-items: center;           
 }
 
 /* Logo */
