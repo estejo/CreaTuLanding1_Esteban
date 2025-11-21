@@ -1,9 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import React from 'react'
 import NavBar from './components/NavBar/NavBar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx'
-import CartPage from './components/CartPage.jsx'
+import { CartProvider } from "./context/CartContext";
 import NotFound from './components/NotFound.jsx'
 import './App.css'
 
@@ -20,7 +19,7 @@ function App() {
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/category/:categoryId' element={<ItemListContainer />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
-          <Route path='/cart' element={<CartPage />} />
+          <Route path='/cart' element={<CartProvider />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>

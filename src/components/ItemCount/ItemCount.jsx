@@ -1,18 +1,31 @@
-import React, { useState } from 'react'
 
-const ItemCount = ({ initial=1, stock=10, onAdd }) => {
-  const [count,setCount] = useState(initial)
-  const add = ()=> setCount(c => Math.min(stock, c+1))
-  const sub = ()=> setCount(c => Math.max(1, c-1))
+import { useState } from 'react';
+
+const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
+  const [quantity, setQuantity] = useState(initial);
+
+  const increment = () => {
+    if (quantity < stock) setQuantity(prev => prev + 1);
+  };
+  const decrement = () => {
+    if (quantity > 1) setQuantity(prev => prev - 1);
+  };
+
   return (
-    <div style={{display:'flex',flexDirection:'column',gap:8}}>
-      <div style={{display:'flex',alignItems:'center',gap:8}}>
-        <button onClick={sub}>-</button>
-        <span>{count}</span>
-        <button onClick={add}>+</button>
+    <div className="item-count">
+      <div className="controls">
+        <button onClick={decrement} disabled={quantity <= 1}>-</button>
+        <span>{quantity}</span>
+        <button onClick={increment} disabled={quantity >= stock}>+</button>
       </div>
-      <button onClick={()=> onAdd && onAdd(count)}>Agregar al carrito</button>
+      <div className="actions">
+        <button onClick={() => onAdd(quantity)} disabled={stock === 0}>
+          {stock === 0 ? 'Sin stock' : 'Agregar al carrito'}
+        </button>
+      </div>
     </div>
-  )
-}
-export default ItemCount
+  );
+};
+
+export default ItemCount;
+

@@ -2,12 +2,22 @@ import React from 'react'
 import ItemCard from './ItemCard.jsx'
 import './itemlist.css'
 
-const ItemList = ({ items }) => {
-  return (
-    <div className="catalogo-grid">
-      {items.map(i => <ItemCard key={i.id} item={i} />)}
-    </div>
-  )
-}
+const ItemList = ({ products }) => {
 
-export default ItemList
+  if (!products || products.length === 0) {
+    return <p>Cargando productos...</p>;
+  }
+
+  return (
+    <div>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h3>{product.title}</h3>
+          <p>Precio: {product.price}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default ItemList;
