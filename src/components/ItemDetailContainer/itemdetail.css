@@ -1,0 +1,52 @@
+/* ===== Contenedor del detalle de producto ===== */
+.item-detail {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones después de añadir al carrito */
+.after-add-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.after-add-buttons button {
+    padding: 10px 16px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #fff; /* fondo blanco */
+    color: #000; /* texto negro */
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.after-add-buttons button:hover {
+    transform: scale(1.05);
+    background-color: #FFB703; /* hover amarillo */
+    color: #000;
+    border-color: #FFB703;
+}
+
+/* Botón ir al carrito */
+.go-cart-btn {
+    background-color: #fff; /* fondo blanco */
+    color: #000; /* texto negro */
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.go-cart-btn:hover {
+    background-color: #FFB703; /* hover amarillo */
+    color: #000;
+    border-color: #FFB703;
+}
+

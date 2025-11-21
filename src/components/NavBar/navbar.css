@@ -1,21 +1,36 @@
+/* ===== Navbar Global ===== */
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;          /* ancho completo del viewport */
     height: 90px;
-    z-index: 100;
-    background-color: rgba(104, 243, 236, 0.8);
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;       /* opcional, ajusta espacio interno */
+    background: orange; /* degradé celeste claro a blanco */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
+    box-sizing: border-box; /* asegura que padding no expanda el ancho */
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+/* Contenedor de categorías y carrito */
+.navbar .nav-left,
+.navbar .nav-right {
+    display: flex;
+    align-items: center;           /* centra verticalmente */
+    gap: 2rem;                     /* espacio entre elementos */
 }
 
 /* Logo */
 .navbar .logo {
     width: 100px;
-    height: 85px;
+    height: auto;
     cursor: pointer;
 }
 
@@ -23,46 +38,4 @@
 .categorias {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.categorias li a {
-    text-decoration: none;
-    color: rgb(3, 3, 83);
-    font-size: 20px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.categorias li a:hover {
-    color: #f39c12;
-}
-
-/* Contenedor carrito + link */
-.cart-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.cart-container img {
-    max-width: 50px;
-    width: 100%;
-    padding: 40px;
-    margin-top: 1rem;
-    display: flexbox;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-@media (max-width: 768px) {
-    .categorias {
-        display: none;
-        /* Aquí podrías poner un menú hamburguesa si quieres */
-    }
 }

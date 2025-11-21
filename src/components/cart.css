@@ -1,0 +1,49 @@
+/* ===== Contenedor del carrito ===== */
+.cart-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Título del carrito ===== */
+.cart-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; /* título negro */
+}
+
+/* ===== Tabla del carrito ===== */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.cart-table th {
+    background: #000; /* encabezados en negro */
+    color: #fff;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.cart-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    color: #000; /* texto negro */
+}
+
+.cart-image {
+    width: 55px;
+    border-radius: 6px;
+}
+
+/* ===== Botones del carrito ===== */

@@ -1,19 +1,21 @@
+/* ===== Contenedor de productos ===== */
 .itemlistcontainer {
     margin-top: 45px;
     text-align: center;
     padding: 1rem;
 }
 
+/* Título de la sección */
 .itemlistcontainer h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: #34495e;
+    color: #000; /* título negro uniforme */
     margin-bottom: 0.5rem;
     animation: fadeIn 1.2s ease forwards;
     opacity: 0;
 }
 
-/* Keyframes de fadeIn */
+/* ===== Keyframes de fadeIn (unificados) ===== */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -23,4 +25,42 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ===== Cards dentro de itemlistcontainer ===== */
+.item-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px; /* adaptable */
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+.item-card .card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
 }

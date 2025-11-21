@@ -1,0 +1,42 @@
+/* ===== Contenedor checkout ===== */
+.checkout-container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== Formulario checkout ===== */
+.checkout-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* ===== Botones checkout ===== */
+.checkout-form button,
+.success-message button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff; /* fondo blanco */
+    color: #000; /* texto negro */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkout-form button:hover,
+.success-message button:hover {
+    background-color: #FFB703; /* hover amarillo */
+    color: #000;
+    border-color: #FFB703;
+}

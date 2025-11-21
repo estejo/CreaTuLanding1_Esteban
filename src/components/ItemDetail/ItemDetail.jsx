@@ -1,6 +1,8 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";  
+import "./itemdetail.css";
 
 const ItemDetail = ({ product }) => {
   const { addItem } = useContext(CartContext);
@@ -11,8 +13,7 @@ const ItemDetail = ({ product }) => {
     setAddedToCart(true);
   };
 
-  // Loader o error si no hay producto aún (por async Firestore)
-  if (!product) {
+  if (!product || Object.keys(product).length === 0) {
     return <p>Cargando producto...</p>;
   }
 
@@ -26,13 +27,22 @@ const ItemDetail = ({ product }) => {
       {!addedToCart ? (
         <ItemCount stock={product.stock} initial={1} onAdd={handleAdd} />
       ) : (
-        <button className="btn btn-success">
-          Producto agregado ✔ Ir al carrito
-        </button>
+        <div className="after-add-buttons">
+          <button onClick={() => handleAdd(1)}>
+            Agregar otro
+          </button>
+
+          <Link to="/cart">
+            <button className="go-cart-btn">
+              Ir al carrito
+            </button>
+          </Link>
+        </div>
       )}
     </div>
   );
 };
 
 export default ItemDetail;
+
 

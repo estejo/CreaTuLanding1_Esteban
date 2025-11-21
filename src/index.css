@@ -1,0 +1,273 @@
+/* ===== Tipografía Global ===== */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Barra de navegación ===== */
+.navbar {
+    background: linear-gradient(to right, #1e1e1e, #333);
+    color: #fff;
+    padding: 0.5rem 2rem;
+
+}
+
+/* Contenedor de categorías y carrito */
+.navbar .nav-left,
+.navbar .nav-right {
+    display: flex;
+    align-items: center;           /* centra verticalmente */
+    gap: 2rem;                     /* espacio entre elementos */
+} 
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFB703;
+}
+
+/* ===== Botones ===== */
+button, .btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #FFB703;
+    color: #000;
+    border-color: #FFB703;
+}
+
+/* ===== Cards de productos ===== */
+
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.card-price {
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* ===== Número de carrito ===== */
+.cart-count {
+    background-color: #FFB703;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* ===== Etiquetas y precios ===== */
+.label, .price {
+    color: #000;
+    font-weight: bold;
+}
+
+/* ===== Layout Responsive ===== */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* ===== Inputs ===== */
+input, select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== Tipografía Global ===== */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #f5f5f5;
+    margin: 60px;
+    padding: 0;
+}
+
+/* ===== Barra de navegación ===== */
+.navbar {
+    background: linear-gradient(to right, #a7d8f5, #ffffff); /* degradé celeste claro a blanco */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
+    color: #fff;
+    padding: 0.5rem 2rem;
+}
+
+.navbar a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFB703;
+}
+
+/* ===== Botones ===== */
+button, .btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #FFB703;
+    color: #000;
+    border-color: #FFB703;
+}
+
+/* ===== Cards de productos ===== */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.card-price {
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ===== Número de carrito ===== */
+.cart-count {
+    background-color: #FFB703;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* ===== Etiquetas y precios ===== */
+.label, .price {
+    color: #000;
+    font-weight: bold;
+}
+
+/* ===== Layout Responsive ===== */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* ===== Inputs ===== */
+input, select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}

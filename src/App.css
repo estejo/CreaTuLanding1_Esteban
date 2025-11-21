@@ -1,11 +1,14 @@
+/* ===== Tipografía Global ===== */
 body {
     margin: 0;
     padding-top: 60px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2c3e50;
+    color: #000; /* texto general en negro */
+    background-color: #f5f5f5;
 }
 
+/* ===== App Root y animaciones ===== */
 .app-root {
     text-align: center;
     padding: 2rem 0;
@@ -14,35 +17,51 @@ body {
 .app-root h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #14395f;
+    color: #000; /* título principal negro */
     letter-spacing: 1px;
     animation: fadeIn 1.5s ease forwards;
     opacity: 0;
 }
 
-
-/* Keyframes */
+/* ===== Keyframes Animación ===== */
 @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
+/* ===== Barra de navegación ===== */
+.navbar {
+    background: linear-gradient(to right, #a7d8f5, #ffffff); /* degradé celeste claro a blanco */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
+    color: #fff;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.6rem;
-    }
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFB703; /* hover amarillo */
+}
+
+/* ===== Botones ===== */
+button, .btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
 }

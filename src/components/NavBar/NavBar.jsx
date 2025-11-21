@@ -18,12 +18,12 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <div className="cart-container">
+      
         <Link to="/cart" style={{ color: '#033', textDecoration: 'none', fontWeight: '500' }}></Link>
         <CartWidget />
-      </div>
-    </nav>
+      
+      </nav>
   );
-};
+}
 
 export default NavBar;

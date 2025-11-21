@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext.jsx'
 import { Link } from 'react-router-dom'
+import "./cart.css"
 
 const CartPage = () => {
   const { cart, removeFromCart, clearCart, getTotalPrice } = useContext(CartContext)
@@ -23,7 +24,11 @@ const CartPage = () => {
         </tbody>
       </table>
       <h3>Total: ${getTotalPrice()}</h3>
-      <div style={{display:'flex',gap:8}}><button onClick={clearCart}>Vaciar carrito</button><button onClick={()=> alert('Compra simulada')}>Finalizar compra</button></div>
+      <div style={{display:'flex',gap:8}}><button onClick={clearCart}>Vaciar carrito</button><Link to="/checkout">
+  <button className="cart-btn-checkout">
+    Finalizar compra
+  </button>
+</Link></div>
     </div>
   )
 }

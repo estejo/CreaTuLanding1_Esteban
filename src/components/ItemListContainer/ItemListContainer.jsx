@@ -3,7 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import "./itemlistcontainer.css";
 import { useParams } from 'react-router-dom';
 import {collection, getDocs, query, where} from "firebase/firestore";
-import db from "../../db/db";
+import {db} from "../../db/db";
 
 
 const ItemListContainer = ({greeting}) => {
@@ -27,20 +27,26 @@ const ItemListContainer = ({greeting}) => {
     }
   }
 
-const getProductsByCategory = async() => {
+const getProductsByCategory = async () => {
   try {
-    const q = query(productsRef, where("category", "==", category));
+    // Normalizamos para que coincida con Firebase
+    const normalizedCategory = category.charAt(0).toUpperCase() + category.slice(1);
+
+    const q = query(productsRef, where("categoryLowercase", "==", category.toLowerCase()));
+
     const dataDb = await getDocs(q);
-    const data = dataDb.docs.map( (productDb) => {
-        return { id: productDb.id, ...productDb.data() };
-      });
-      setProducts(data);
-  }catch (error) {
-      console.log(error);
-    } finally {
-      setLoading(false);
-    }
-}
+    const data = dataDb.docs.map(productDb => {
+      return { id: productDb.id, ...productDb.data() };
+    });
+
+    setProducts(data);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
 
   useEffect(()=> {
