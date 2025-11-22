@@ -14,7 +14,12 @@ const CartPage = () => {
         <tbody>
           {cart.map(it=> (
             <tr key={it.id} style={{borderTop:'1px solid #eee'}}>
-              <td style={{display:'flex',gap:8,alignItems:'center'}}><img src={it.image} style={{width:60}} alt=""/><span>{it.title}</span></td>
+              <td style={{display:'flex',gap:8,alignItems:'center'}}> {/* Imagen corregida */}
+                <img 
+                  src={'/images/' + it.image} 
+                  alt={it.title} 
+                  style={{width:60, height:60, objectFit:'cover', borderRadius: '6px'}} 
+                /><span>{it.title}</span></td>
               <td>{it.quantity}</td>
               <td>${it.price}</td>
               <td>${it.price * it.quantity}</td>

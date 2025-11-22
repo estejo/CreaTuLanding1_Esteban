@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom'
 const ItemCard = ({ item }) => {
   return (
     <div className="item-card">
-      <img 
-        src={'/images/' + item.image} 
-        alt={item.title} 
-        className="card-img" 
+      <img
+        src={'/images/' + item.image}
+        alt={item.title}
       />
       <div className="card-body">
         <h3>{item.title}</h3>
@@ -22,3 +21,4 @@ const ItemCard = ({ item }) => {
 }
 
 export default ItemCard
+

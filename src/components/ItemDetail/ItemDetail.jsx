@@ -20,9 +20,10 @@ const ItemDetail = ({ product }) => {
   return (
     <div className="item-detail">
       <h2>{product.title}</h2>
+      {/* CORRECCIÓN: se usa product en vez de item */}
       <img 
-        src={'/images/' + item.image} 
-        alt={item.title} 
+        src={'/images/' + product.image} 
+        alt={product.title} 
         className="card-img" 
       />
       <p>{product.description}</p>
@@ -48,5 +49,6 @@ const ItemDetail = ({ product }) => {
 };
 
 export default ItemDetail;
+
 
 

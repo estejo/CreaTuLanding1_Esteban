@@ -9,7 +9,7 @@ const products = [
     { id: '5', title: '¿Dónde están las emociones?', price: 19900, category: 'Infantil', description: 'Adéntrate en los escenarios más fascinantes con Alegría, Tristeza, Ansiedad, Envidia y las demás Emociones que guiarán a Riley en su día a día. ', stock: 10, image: 'intensamente.JPG' },
     { id: '6', title: 'El mapa qe me lleva a ti', price: 29900, category: 'Juvenil', description: 'Cuando Heather emprendió unas vacaciones en tren por Europa con sus amigas, no era el momento en que esperaba conocer a Jack. ', stock: 10, image: 'elmapa.JPG' },
     { id: '7', title: 'Historia', price: 42500, category: 'Escolar', description: 'Una propuesta de Silvia Vázquez de Fernández, profesora de Historia, posgraduada en Metodología de la investigación en Ciencias Sociales. ', stock: 10, image: 'historia.JPG' },
-    { id: '8', title: 'Un verano en NY', price: 31999, category: 'Juvenil', description: 'Elle es guionista y tiene veintisiete años. Cuando le ofrecen la oportunidad de escribir el guion de una película de alto presupuesto solo tiene un problema: su mente está completamente bloqueada y debe entregarlo al final del verano.', stock: 10, image: 'unveranoenny.JPG' }
+    { id: '8', title: 'Un verano en NY', price: 31999, category: 'Juvenil', description: 'Elle es guionista y tiene veintisiete años. Le ofrecen  escribir el guion de una película, solo tiene un problema: su mente está completamente bloqueada y debe entregarlo al final del verano.', stock: 10, image: 'unveranoenny.JPG' }
 ];
 
 const seedProducts = async () => {
