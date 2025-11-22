@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
-import { Link } from "react-router-dom";  
+import { Link } from "react-router-dom";
 import "./itemdetail.css";
 
 const ItemDetail = ({ product }) => {
@@ -20,7 +20,11 @@ const ItemDetail = ({ product }) => {
   return (
     <div className="item-detail">
       <h2>{product.title}</h2>
-      <img src={product.image} alt={product.title} width="300px" />
+      <img 
+        src={'/images/' + item.image} 
+        alt={item.title} 
+        className="card-img" 
+      />
       <p>{product.description}</p>
       <p><strong>Precio:</strong> ${product.price}</p>
 

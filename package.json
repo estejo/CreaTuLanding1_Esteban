@@ -2,6 +2,7 @@
   "name": "comision_88020",
   "private": true,
   "version": "0.0.0",
+    "homepage": "https://estejo.github.io/ProyectoFinalEcommerce_Esteban",
   "type": "module",
   "scripts": {
     "dev": "vite",
