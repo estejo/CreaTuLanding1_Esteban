@@ -29,13 +29,12 @@ const ItemListContainer = ({greeting}) => {
 
 const getProductsByCategory = async () => {
   try {
-    // Normalizamos para que coincida con Firebase
     const normalizedCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
     const q = query(productsRef, where("categoryLowercase", "==", category.toLowerCase()));
 
     const dataDb = await getDocs(q);
-    const data = dataDb.docs.map(productDb => {
+    const data = dataDb.docs.map((productDb) => {
       return { id: productDb.id, ...productDb.data() };
     });
 
@@ -68,4 +67,4 @@ const getProductsByCategory = async () => {
   )
 };
 
-export default ItemListContainer;
+export default ItemListContainer

@@ -30,7 +30,7 @@ export const CartProvider = ({ children }) => {
   const getTotalQuantity = () =>
     cart.reduce((acc, item) => acc + item.quantity, 0);
 
-  // ⚠️ ESTA ES LA FUNCIÓN QUE TE FALTABA
+
   const getTotalPrice = () =>
     cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 

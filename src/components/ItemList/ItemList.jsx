@@ -1,4 +1,3 @@
-import React from 'react'
 import ItemCard from './ItemCard.jsx';
 import './itemlist.css';
 
